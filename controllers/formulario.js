@@ -100,7 +100,7 @@ const postFormularios = async (req = request, res = response) => {
 
     const newForm = new Formulario(data);
 
-    // await newForm.save();
+    await newForm.save();
 
     res.json({
         msg: 'Agregado con éxito',
